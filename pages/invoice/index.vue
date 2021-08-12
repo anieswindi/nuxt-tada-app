@@ -169,7 +169,34 @@
               <div class="deletes"><span>Delete</span></div>
               <div class="marked"><span>Mark as Paid</span></div>
             </div>
-            <div class="totals"></div>
+            <div class="totals">
+              <div class="top">
+                <span>Union, England</span>
+                <span>13511</span>
+                <span>UK</span>
+              </div>
+              <div class="center">
+                <div class="texted">
+                  <span>Send to :</span>
+                  <span>alex@gmail.com</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="head-tb">
+                  <div class="text-head">Qty.</div>
+                  <div class="text-head">Price</div>
+                  <div class="text-head">Total</div>
+                </div>
+                <div class="body-tb">
+                  <div class="text-head">3</div>
+                  <div class="text-head">5000</div>
+                  <div class="text-head">15000</div>
+                </div>
+              </div>
+              <div class="total_all">
+                <div class="textall"><span>$5000</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
