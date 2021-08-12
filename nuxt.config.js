@@ -11,7 +11,24 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"
+      },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "//unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+      }
+    ],
     script: [
       {
         src: "/vendor/jquery/jquery.min.js"
@@ -24,6 +41,9 @@ export default {
       },
       {
         src: "/js/sb-admin-2.min.js"
+      },
+      {
+        src: "//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"
       }
     ]
   },
@@ -44,7 +64,7 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["bootstrap-vue/nuxt"],
+  modules: ["bootstrap-vue/nuxt", "@nuxtjs/auth", "@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
