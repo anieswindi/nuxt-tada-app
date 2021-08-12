@@ -148,13 +148,30 @@
                   <input class="input-form-control" type="text" readonly />
                 </div>
               </div>
-              <div class="btn-add-list">
+              <div class="btn-add-list" @click="addNewList">
                 <span>Add New Item</span>
               </div>
             </form>
           </div>
+          <div class="btn-save-add">
+            <div class="flex-btn-wrap">
+              <div class="btn-cancel">
+                <NuxtLink to="/">Cancel</NuxtLink>
+              </div>
+              <div class="btn-add-new"><span>Add</span></div>
+            </div>
+          </div>
         </div>
-        <div class="right-row"></div>
+        <div class="right-row">
+          <div class="rg-primary">
+            <div class="status">
+              <div class="edits"><span>Edit</span></div>
+              <div class="deletes"><span>Delete</span></div>
+              <div class="marked"><span>Mark as Paid</span></div>
+            </div>
+            <div class="totals"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -168,6 +185,11 @@
 export default {
   data() {
     return {
+      count: 0,
+      newItemName: "",
+      newQty: 0,
+      newPrice: 0,
+      item_list: [],
       invoices: {
         id: null,
         id_invoice: null,
@@ -223,6 +245,18 @@ export default {
       } else if (key === "bill_to_project_desc") {
         this.invoices.project_description = e.target.value;
       }
+    },
+    addNewList: function() {
+      console.log(this.count++);
+      //   this.item_list.push({
+      //     id: this.count++,
+      //     item_name: this.newItemName,
+      //     qty: this.newQty,
+      //     price: this.newPrice
+      //   });
+      //   this.newItemName = "";
+      //   this.newQty = 0;
+      //   this.newPrice = 0;
     }
   }
 };

@@ -42,8 +42,77 @@
 
 .right-row {
   width: 40%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #0a0d14;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem 0 0;
+}
+
+.rg-primary {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.status {
+  height: 17%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0f121b;
+}
+
+.edits {
+  width: 30%;
+  height: 70%;
+  background-color: #1f2138;
+  border: 1px solid #363d4c;
+  border-radius: 30px;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+
+.deletes {
+  width: 30%;
+  height: 70%;
+  background-color: #d33238;
+  border-radius: 30px;
+  display: flex;
+
+  margin: auto;
+  padding: 1rem;
+}
+
+.marked {
+  width: 30%;
+  height: 70%;
+  background-color: #6a4dd3;
+  border-radius: 30px;
+  display: flex;
+
+  margin: auto;
+  padding: 1rem;
+}
+
+.marked span,
+.deletes span,
+.edits span {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  margin: auto;
+}
+
+.totals {
+  margin-top: 3rem;
+  width: 100%;
+  height: 83%;
+  background-color: beige;
 }
 
 .input-form-control {
@@ -74,6 +143,55 @@
 }
 
 .btn-add-list span {
-    margin: auto;
+  margin: auto;
+}
 
+.btn-save-add {
+  height: 50px;
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-btn-wrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btn-cancel {
+  width: 40%;
+  height: 100%;
+  background-color: #1f2138;
+  border: 1px solid #363d4c;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-add-new {
+  width: 40%;
+  height: 100%;
+  background-color: #6a4dd3;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-cancel a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+}
+
+.btn-add-new span {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  margin: auto;
 }
